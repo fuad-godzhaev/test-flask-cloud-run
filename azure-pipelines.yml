@@ -11,9 +11,9 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '2539ec8a-9061-4a60-b163-9e8b7882c986'
+  dockerRegistryServiceConnection: 'test1'
   imageRepository: 'cloud-computing-lab'
-  containerRegistry: 'labo5test.azurecr.io'
+  containerRegistry: 'cclab5containerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$latest'
   imagePullSecret: 'labo5test5269-auth'
