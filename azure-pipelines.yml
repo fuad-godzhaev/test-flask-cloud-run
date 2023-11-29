@@ -30,6 +30,7 @@ stages:
     displayName: Build
     pool:
       vmImage: $(vmImageName)
+      #name: Default
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
@@ -53,7 +54,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'self-hosted.w'
+    environment: 'self-hosted'
     strategy:
       runOnce:
         deploy:
