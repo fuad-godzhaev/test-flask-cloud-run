@@ -69,3 +69,5 @@ stages:
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
+                kubernetesServiceConnection: $(kubernetesServiceConnection)
+
