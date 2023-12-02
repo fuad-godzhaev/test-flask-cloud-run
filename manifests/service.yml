@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: lairdptestflaskcloudrun
+    name: cloud-computing-lab
 spec:
     type: LoadBalancer
     ports:
     - port: 80 
     selector:
-        app: lairdptestflaskcloudrun
+        app: cloud-computing-lab
