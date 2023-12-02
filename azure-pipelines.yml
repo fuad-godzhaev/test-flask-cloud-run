@@ -12,6 +12,7 @@ variables:
   tag: 'latest'
   imagePullSecret: 'labo5test5269-auth'
   vmImageName: 'ubuntu-latest'
+  kubernetesServiceConnection: 'cluster_conn'
 
 stages:
 - stage: CI
@@ -55,6 +56,7 @@ stages:
               action: createSecret
               secretName: $(imagePullSecret)
               dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
+              kubernetesServiceConnection: $(kubernetesServiceConnection)
 
           - task: KubernetesManifest@0
             displayName: Deploy to Kubernetes cluster
