@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: lairdptestflaskcloudrun 
+  name: cloud-computing-lab 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lairdptestflaskcloudrun
+      app: cloud-computing-lab
   template:
     metadata:
       labels:
-        app: lairdptestflaskcloudrun 
+        app: cloud-computing-lab 
     spec:
       containers:
-        - name: lairdptestflaskcloudrun 
-          image: cclab5containerregistry.azurecr.io/lairdptestflaskcloudrun
+        - name: cloud-computing-lab 
+          image: cclab5containerregistry.azurecr.io/cloud-computing-lab
           ports:
           - containerPort: 80
