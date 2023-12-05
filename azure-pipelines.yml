@@ -6,7 +6,7 @@ resources:
 
 variables:
   dockerRegistryServiceConnection: 'test1'
-  imageRepository: 'wirexia0/cloud-computing-lab'
+  imageRepository: 'samples/hello'
   containerRegistry: 'cclab5containerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: 'latest'
