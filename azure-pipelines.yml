@@ -6,8 +6,8 @@ resources:
 
 variables:
   dockerRegistryServiceConnection: 'test1'
-  imageRepository: 'samples/hello'
-  containerRegistry: 'cclab5containerregistry.azurecr.io'
+  imageRepository: 'wirexia0/cloud-computing-lab'
+  containerRegistry: 'docker.io'
   dockerfilePath: '**/Dockerfile'
   tag: 'latest'
   imagePullSecret: 'labo5test5269-auth'
