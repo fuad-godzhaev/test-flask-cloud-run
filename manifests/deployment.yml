@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: cloud-computing-lab 
-          image: docker.io/wirexia0/cloud-computing-lab
+          image: wirexia0/cloud-computing-lab
           imagePullPolicy: Always
           ports:
           - containerPort: 80
