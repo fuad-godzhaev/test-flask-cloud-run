@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cloud-computing-lab 
-          image: cclab5containerregistry.azurecr.io/cloud-computing-lab
+          image: docker.io/wirexia0/cloud-computing-lab
           ports:
           - containerPort: 80
